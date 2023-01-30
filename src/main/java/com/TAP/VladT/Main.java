@@ -1,11 +1,11 @@
 package com.TAP.VladT;
 
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import javax.swing.*; //Utilizat in iterfata grafica
+import java.awt.*;//Utilizat in iterfata grafica
+import java.awt.event.ActionEvent;//Folosit pentru a seta actiunea unui event
+import java.awt.event.ActionListener;//Folosit pentru a captura un event
 import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
+import java.awt.event.KeyEvent;//Folosit pentru a seta actiunea unui event de tip keypress
 import java.util.Objects;
 
 class gui {
