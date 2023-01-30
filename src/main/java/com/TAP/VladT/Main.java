@@ -8,9 +8,9 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;//Folosit pentru a seta actiunea unui event de tip keypress
 import java.util.Objects;
 
-class gui {
+class Main {
 
-    static JTextField valA=new JTextField("",5);
+
 
     public static void main(String[] args) {
 
@@ -40,6 +40,7 @@ class gui {
         JPanel panelmain0 = new JPanel();
         JLabel lbl0 = new JLabel("Ce valoare are eticheta L?");
         lbl0.setAlignmentX(Component.CENTER_ALIGNMENT);
+        JTextField valA=new JTextField("",5);
 
 
 
@@ -246,11 +247,8 @@ class gui {
                     }
                 }
 
-                int z =  fBiject(a,fBiject(b,c));
                 if (errLb.getText().equals("")){
                     rezLb.setText("Rezultatul este:"+fBiject(a,fBiject(b,c)));
-                    System.out.println(cb2.getSelectedItem().toString());
-                    System.out.println(b);
                 }
 
 
