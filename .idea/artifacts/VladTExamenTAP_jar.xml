@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="VladTExamenTAP:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/VladTExamenTAP_jar</output-path>
+    <root id="archive" name="VladTExamenTAP.jar">
+      <element id="module-output" name="VladTExamenTAP" />
+    </root>
+  </artifact>
+</component>

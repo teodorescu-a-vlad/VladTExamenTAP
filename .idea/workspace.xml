@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d0ec5e5e-a131-4d5e-8d96-123a11c4aa4d" name="Changes" comment="tap">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/TAP/VladT/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TAP/VladT/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,12 +43,28 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.gui">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="ElemPrimite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.TAP.VladT.ElemPrimite" />
+      <module name="VladTExamenTAP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.TAP.VladT.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.TAP.VladT.Main" />
       <module name="VladTExamenTAP" />
       <extension name="coverage">
         <pattern>
@@ -76,6 +91,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.gui" />
         <item itemvalue="Application.ElemPrimite" />
       </list>
@@ -118,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675039064220</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="tap">
+      <created>1675052189247</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675052189247</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
