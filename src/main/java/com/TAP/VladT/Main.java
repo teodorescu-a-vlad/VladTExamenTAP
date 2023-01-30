@@ -6,12 +6,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.util.Objects;
 
 class gui {
 
     static JTextField valA=new JTextField("",5);
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         //Creating the Frame
         JFrame frame = new JFrame("Exercitiul 3");
@@ -32,7 +33,6 @@ class gui {
         panel.add(errLb);
 
 
-        GridLayout vertical = new GridLayout(0,2);
         GridLayout horizontal = new GridLayout(0,1);
 
         JPanel mainpan=new JPanel(horizontal);
@@ -84,7 +84,7 @@ class gui {
         panelmain1.add(cb);
 
         cb.addItemListener(arg0 -> {
-           if (cb.getSelectedItem().toString()=="Variabila de iesire"){
+           if (Objects.requireNonNull(cb.getSelectedItem()).toString().equals("Variabila de iesire")){
                panelSec.setVisible(false);
                valS.setText("");
 
@@ -167,7 +167,7 @@ class gui {
         panelmain3.setVisible(false);
 
         cb2.addItemListener(arg0 -> {
-            if (cb2.getSelectedItem().toString()=="IF v≠0 goto L"){
+            if (Objects.requireNonNull(cb2.getSelectedItem()).toString().equals("IF v≠0 goto L")){
                 panelmain3.setVisible(true);
 
             }else {
@@ -184,10 +184,9 @@ class gui {
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                int a = 0, b = 0, c = 0, i, l;
+                int a=0, b = 0, c = 0, i, l;
 
-                if (valA.getText().isEmpty()) {
-                } else {
+                if (!valA.getText().isEmpty()) {
                     a=Integer.parseInt(valA.getText());
                 }
 
@@ -195,6 +194,7 @@ class gui {
                     case "Variabila de iesire" -> {
                         c = 0;
                         errLb.setText("");
+
                     }
                     case "Variabila de intrare" -> {
                         if (valS.getText().isEmpty()) {
@@ -221,32 +221,36 @@ class gui {
                 }
 
                 switch (cb2.getSelectedItem().toString()) {
-                    case "IF v≠0 goto L": {
+                    case "IF v≠0 goto L" -> {
                         if (valI.getText().isEmpty() || Integer.parseInt(valI.getText()) == 0) {
                             errLb.setText("* L trebuie sa fie un numar mai mare ca 0");
                             errLb.setForeground(Color.RED);
                             rezLb.setText("Rezultatul este:");
-                        } else {
+                        } else if (errLb.getText().equals("")) {
                             l = Integer.parseInt(valI.getText());
                             b = 2 + l;
                             errLb.setText("");
+                        } else {
+                            rezLb.setText("Rezultatul este:");
 
                         }
                     }
-                    case "v←v-1":
+                    case "v←v-1" -> {
                         b = 2;
-                        break;
-                    case "v←v+1":
+                    }
+                    case "v←v+1" -> {
                         b = 1;
-                        break;
-                    case "v←v":
+                    }
+                    case "v←v" -> {
                         b = 0;
-                        break;
+                    }
                 }
 
                 int z =  fBiject(a,fBiject(b,c));
-                if (errLb.getText()==""){
+                if (errLb.getText().equals("")){
                     rezLb.setText("Rezultatul este:"+fBiject(a,fBiject(b,c)));
+                    System.out.println(cb2.getSelectedItem().toString());
+                    System.out.println(b);
                 }
 
 
